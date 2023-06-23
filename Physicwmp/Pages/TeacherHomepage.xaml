@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Physicwmp.Pages.TeacherHomepage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="WhiteSmoke">
+                <StackLayout x:Name="layout">
+                    <Frame BackgroundColor="WhiteSmoke">
+                        <Button Text="Những thông báo lớp 10: "
+                            HorizontalOptions="FillAndExpand"
+                            HeightRequest="80"
+                            BackgroundColor="BlanchedAlmond"
+                            BorderWidth="0.5"
+                            BorderColor="Black"
+                            CornerRadius="5"
+                            Clicked="Button_Clicked"/>
+                    </Frame>
+                    <Frame BackgroundColor="WhiteSmoke">
+                        <Button Text="Những thông báo lớp 11: "
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HeightRequest="80"
+                            BackgroundColor="BlanchedAlmond"
+                            BorderWidth="0.5"
+                            BorderColor="Black"
+                            CornerRadius="5"
+                            Clicked="Button1_Clicked"/>
+                    </Frame>
+
+                    <Frame BackgroundColor="WhiteSmoke">
+                        <Button Text="Những thông báo lớp 12: "
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HeightRequest="80"
+                            BackgroundColor="BlanchedAlmond"
+                            BorderWidth="0.5"
+                            BorderColor="Black"
+                            CornerRadius="5"
+                            Clicked="Button2_Clicked"/>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Button Text="Add Notification"
+                            BackgroundColor="Azure"
+                            Clicked="Button_Clicked1"/>
+
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+  
+</ContentPage>

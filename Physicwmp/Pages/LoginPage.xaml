@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Physicwmp.Pages.LoginPage">
+    
+    <AbsoluteLayout BackgroundColor="White">
+        <Image Source="icon.jpg"
+                   HeightRequest="120"
+                   WidthRequest="150"
+                   AbsoluteLayout.LayoutBounds="118,15"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   x:Name="icon"/>
+
+        <Label Text="UserName: "
+                   AbsoluteLayout.LayoutBounds="15,195"
+                   FontSize="20"
+                   FontFamily=""/>
+
+        <Entry IsPassword="False"
+                   AbsoluteLayout.LayoutBounds="10,220"
+                   Placeholder="Enter your UserName                                      "
+                   x:Name="Username"/>
+
+        <Label Text="Password: "
+                   AbsoluteLayout.LayoutBounds="15,300"
+                   FontSize="20"
+                   FontFamily=""/>
+
+        <Entry IsPassword="True"
+                   AbsoluteLayout.LayoutBounds="10,325"
+                   x:Name="Password"
+                   Placeholder="Enter your Password                                      "/>
+
+        <ImageButton AbsoluteLayout.LayoutBounds="115,450"
+                        Source="login.png"
+                        HeightRequest="45"
+                        WidthRequest="150"
+                        Clicked="ImageButton_Clicked"
+                        x:Name="loginbutton"/>
+        
+        <CheckBox AbsoluteLayout.LayoutBounds="30,390" x:Name="checkbox"
+                  Color="Black"/>
+        <Button AbsoluteLayout.LayoutBounds="60,381"
+               Text="Check if you are a teacher"
+               FontSize="18"
+               FontAttributes="Bold"
+               BackgroundColor="White"
+                Clicked="Button_Clicked"/>
+
+    </AbsoluteLayout>
+</ContentPage>
